@@ -1,0 +1,2 @@
+import"./assets/modulepreload-polyfill-3cfb730f.js";/* empty css                      */function e(o,r,t){return new Promise((c,n)=>{setTimeout(()=>{r?c(t):n(t)},o)})}const l=e(1e3,!0,"p1"),i=e(4e3,!0,"p2"),p=e(3e3,!1,"p3"),m=e(5e3,!0,"p4"),s=[l,i,p,m];Promise.all(s).then(o=>{console.log(o)}).catch(o=>{console.log(o)});Promise.allSettled(s).then(o=>{console.log(o)});Promise.race(s).then(o=>{console.log(o)}).catch(o=>{console.log(o)});
+//# sourceMappingURL=commonHelpers5.js.map

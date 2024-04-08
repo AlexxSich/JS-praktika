@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users Cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    
+  <script type="module" crossorigin src="/vanilla-app-template/commonHelpers7.js"></script>
+  <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/modulepreload-polyfill-3cfb730f.js">
+  <link rel="stylesheet" href="/vanilla-app-template/assets/users-cards-962edde8.css">
+</head>
+
+<body>
+    <a href="./index.html">Go Home</a>
+    <section class="form-section">
+
+
+        <form class="create-user">
+            <h2>Create user card</h2>
+            <div class="form-field-wrapper">
+                <label class="form-label" for="user-name">Name:</label>
+                <input class="form-input" id="user-name" name="userName" type="text">
+            </div>
+
+            <div class="form-field-wrapper">
+                <label class="form-label" for="user-tel">Phone:</label>
+                <input class="form-input" id="user-tel" name="userPhone" type="tel">
+            </div>
+
+            <div class="form-field-wrapper">
+                <label class="form-label" for="user-email">Email:</label>
+                <input class="form-input" id="user-email" name="userEmail" type="email">
+            </div>
+
+            <button class="form-btn" type="submit">Create</button>
+        </form>
+
+
+
+
+        <form class="update-user">
+            <h2>Update user card</h2>
+            <div class="form-field-wrapper">
+                <label class="form-label" for="user-id">id:</label>
+                <input class="form-input" id="user-id" name="id" type="text">
+            </div>
+            <div class="form-field-wrapper">
+                <label class="form-label" for="user-name">Name:</label>
+                <input class="form-input" id="user-name" name="name" type="text">
+            </div>
+
+            <div class="form-field-wrapper">
+                <label class="form-label" for="user-tel">Phone:</label>
+                <input class="form-input" id="user-tel" name="phone" type="tel">
+            </div>
+
+            <div class="form-field-wrapper">
+                <label class="form-label" for="user-email">Email:</label>
+                <input class="form-input" id="user-email" name="email" type="email">
+            </div>
+
+            <button class="form-btn" type="submit">Update</button>
+        </form>
+
+
+
+        <form class="rewrite-user">
+            <h2>Rewrite user card</h2>
+            <div class="form-field-wrapper">
+                <label class="form-label" for="user-id">id:</label>
+                <input class="form-input" id="user-id" name="id" type="text">
+            </div>
+            <div class="form-field-wrapper">
+                <label class="form-label" for="user-name">Name:</label>
+                <input class="form-input" id="user-name" name="name" type="text">
+            </div>
+
+            <div class="form-field-wrapper">
+                <label class="form-label" for="user-tel">Phone:</label>
+                <input class="form-input" id="user-tel" name="phone" type="tel">
+            </div>
+
+            <div class="form-field-wrapper">
+                <label class="form-label" for="user-email">Email:</label>
+                <input class="form-input" id="user-email" name="email" type="email">
+            </div>
+
+            <button class="form-btn" type="submit">Rewrite</button>
+        </form>
+
+
+
+        <form class="delete-user">
+            <h2>Delete user card</h2>
+            <div class="form-field-wrapper">
+                <label class="form-label" for="user-id">id:</label>
+                <input class="form-input" id="user-id" name="userId" type="text">
+            </div>
+            <button class="form-btn" type="submit">Delete</button>
+        </form>
+
+    </section>
+
+    <div class="users-cards-container">
+        <ul class="users-cards">
+        </ul>
+    </div>
+
+
+    
+</body>
+
+</html>
