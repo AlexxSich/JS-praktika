@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users Cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    
+  <script type="module" crossorigin src="/vanilla-app-template/commonHelpers6.js"></script>
+  <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/modulepreload-polyfill-3cfb730f.js">
+  <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-34f890c2.js">
+  <link rel="stylesheet" href="/vanilla-app-template/assets/create-users-cards-aaba332b.css">
+</head>
+
+<body>
+    <a href="./index.html">Go Home</a>
+    <section class="form-section">
+
+        <h2>Let's work together</h2>
+        <form class="footer-comments">
+            <div class="form-field-wrapper">
+                <!-- <label class="form-label" for="user-email"></label> -->
+                <input class="form-input" id="userInEemail" name="userEmail" type="email"
+                    placeholder="clients@gmail.com" required>
+            </div>
+
+            <div class="form-field-wrapper">
+                <!-- <label class="form-label" for="user-comments">comments</label> -->
+                <textarea class="user-comments-area" id="user-comments" name="textArea" placeholder="comments"
+                    required></textarea>
+            </div>
+
+            <button class="comments-btn" type="submit">Send</button>
+        </form>
+    </section>
+
+    <div class="users-cards-container">
+        <ul class="users-cards">
+        </ul>
+    </div>
+
+
+    
+</body>
+
+</html>
