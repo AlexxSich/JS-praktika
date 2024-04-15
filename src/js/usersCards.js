@@ -35,7 +35,7 @@ function userTemplate(user) {
         <h3 class="user-title">${user.name}</h3>
          <p class="contact-item">Phone: ${user.phone}</p>
          <p class="contact-item">Email: ${user.email}</p>
-       
+         <button class="btn-delete" type="button">Delete</button>
         </li>`;
 }
 

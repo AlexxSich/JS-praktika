@@ -1,0 +1,111 @@
+.covers-section {
+    margin-top: 50px;
+}
+
+body {
+    margin: 0;
+}
+
+.covers-container {
+    margin: 0 0;
+    min-width: 400px;
+    overflow: hidden;
+    padding: 0;
+    background-image: url('../images/covers/background_covers.png');
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-size: 300%;
+}
+
+.content-covers {
+    width: 100%;
+    height: 508px;
+}
+
+.marquee {
+    width: 100%;
+    background-color: #1C1D20;
+    right: -800px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-family: "Pridi", sans-serif;
+    position: relative;
+}
+
+.marquee__inner {
+    display: flex;
+    transform: rotate(16deg);
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+}
+
+.marquee__line {
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-right: 10px;
+    display: flex;
+    width: 70%;
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes marqueeLine {
+    from {
+        transform: translateX(-20%);
+    }
+
+    to {
+        transform: translateX(-180%);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .marquee__line {
+        width: 65%;
+    }
+
+    .covers-container {
+        margin: 0 0;
+        min-width: 768px;
+        height: 960px;
+        overflow: hidden;
+        padding: 0;
+
+    }
+
+    .content-covers {
+        width: 100%;
+    }
+
+    .marquee {
+        gap: 56px;
+        right: -1000px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .marquee__line {
+        width: 40%;
+    }
+
+    .covers-container {
+        margin: 0 0;
+        min-width: 1440px;
+        height: 960px;
+        overflow: hidden;
+        padding: 0;
+
+    }
+
+    .marquee {
+        width: 100%;
+        background-color: #1C1D20;
+        right: -1800px;
+    }
+}
